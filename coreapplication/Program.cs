@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen();  
 builder.Services.AddDbContext<walkDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
 builder.Services.AddScoped<IResionRepository, ResionRepository>();  
 builder.Services.AddScoped<IwalkRepository, WalkRepository>();
