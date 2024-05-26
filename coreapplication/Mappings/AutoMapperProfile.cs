@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using coreapplication.Model.Domain;
+﻿using coreapplication.Model.Domain;
 using coreapplication.Model.DTO;
 //using coreapplication.Model.Domain.;
 
@@ -8,12 +7,6 @@ namespace coreapplication.Mappings
 {
     public class AutoMapperProfile : Profile
     {
-        private readonly IMapper mapper;
-
-        public AutoMapperProfile(IMapper mapper)
-        {
-            this.mapper = mapper;
-        }
         public AutoMapperProfile()
         {
             CreateMap<Region, Regiondto>().ReverseMap();
